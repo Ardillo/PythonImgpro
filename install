@@ -1,0 +1,20 @@
+#!/bin/bash
+
+type="$(uname -s -m)"
+kernel="$(uname -r)"
+echo -e "================================================"
+echo -e "=              SYSTEM INFORMATION              ="
+echo -e "================================================"
+lsb_release -a
+echo -e "kernel:         $kernel"
+echo -e "type:           $type"
+echo -e "================================================"
+
+echo "> Updating apt-get"
+#sudo apt-get update
+echo "> Installing Python packages"
+#sudo apt-get install python-numpy python-scipy python-opencv python-matplotlib python-pip cheese
+echo "> Installing PIP package mahotas"
+#sudo pip install mahotas
+echo "> Installing OpenCV packages"
+#sudo apt-get install libopencv*
