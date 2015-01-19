@@ -23,9 +23,18 @@ sudo apt-get -y install python-scipy
 sudo apt-get -y install python-opencv 
 sudo apt-get -y install python-matplotlib 
 sudo apt-get -y install python-pip 
+echo "> Installing other packages"
 sudo apt-get -y install cheese 
 sudo apt-get -y install vlc
+sudo apt-get -y install openjdk-7-jdk
 echo "> Installing PIP package mahotas"
 sudo pip install mahotas
 echo "> Installing OpenCV packages"
 sudo apt-get -y install libopencv-*
+echo "> Downloading PyCharm educational edition"
+wget http://download.jetbrains.com/python/pycharm-educational-1.0.1.tar.gz
+echo "> Extract tarball"
+tar -xf pycharm-educational-1.0.1.tar.gz
+cd pycharm-edu-1.0.1/bin
+echo "> Run './pycharm.sh' to start PyCharm"
+
