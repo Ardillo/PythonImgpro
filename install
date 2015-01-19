@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function pause(){
+  read -p "$*"
+}
+
 type="$(uname -s -m)"
 kernel="$(uname -r)"
 echo -e "================================================"
@@ -10,11 +14,12 @@ echo -e "kernel:         $kernel"
 echo -e "type:           $type"
 echo -e "================================================"
 
+pause "Press [Enter] key to continue..."
 echo "> Updating apt-get"
-#sudo apt-get update
+sudo apt-get update
 echo "> Installing Python packages"
-#sudo apt-get install python-numpy python-scipy python-opencv python-matplotlib python-pip cheese
+sudo apt-get install python-numpy python-scipy python-opencv python-matplotlib python-pip cheese
 echo "> Installing PIP package mahotas"
-#sudo pip install mahotas
+sudo pip install mahotas
 echo "> Installing OpenCV packages"
-#sudo apt-get install libopencv*
+sudo apt-get install libopencv*
