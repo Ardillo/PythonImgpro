@@ -18,8 +18,14 @@ pause "Press [Enter] key to continue..."
 echo "> Updating apt-get"
 sudo apt-get update
 echo "> Installing Python packages"
-sudo apt-get install python-numpy python-scipy python-opencv python-matplotlib python-pip cheese vlc
+sudo apt-get -y install python-numpy python-scipy 
+sudo apt-get -y install python-scipy
+sudo apt-get -y install python-opencv 
+sudo apt-get -y install python-matplotlib 
+sudo apt-get -y install python-pip 
+sudo apt-get -y install cheese 
+sudo apt-get -y install vlc
 echo "> Installing PIP package mahotas"
 sudo pip install mahotas
 echo "> Installing OpenCV packages"
-sudo apt-get install libopencv-*
+sudo apt-get -y install libopencv-*
